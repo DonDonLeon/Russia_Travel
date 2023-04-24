@@ -1,0 +1,968 @@
+
+.pt-100 {
+     padding-top: 100px;
+}
+ .pb-70 {
+     padding-bottom: 70px;
+}
+ .mbt-100 {
+     margin-bottom: 45px;
+}
+ .image-bg-padding-100 {
+     padding: 100px 0;
+}
+ html, body {
+     height: 100%;
+     font-family: 'Poppins', sans-serif;
+}
+ body {
+     position: relative;
+}
+ a:focus {
+     outline: 0px solid;
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ p {
+     margin: 0 0 15px;
+     font-size: 15px;
+     color: #727272;
+     font-weight: 400;
+     font-family: 'Poppins', sans-serif;
+}
+ h1, h2, h3, h4 {
+     margin: 0 0 10px;
+     font-family: 'Poppins', sans-serif;
+}
+ a {
+     -webkit-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     text-decoration: none;
+}
+ a:hover {
+     text-decoration: none;
+}
+ a:active, a:hover {
+     outline: 0 none;
+}
+ ul {
+     list-style: outside none none;
+     margin: 0;
+     padding: 0;
+}
+ body {
+     font-family: 'Roboto', sans-serif;
+     color: #252525;
+     font-size: 16px;
+     font-weight: 400;
+}
+ ::-moz-selection {
+     background: #b3d4fc;
+     text-shadow: none;
+}
+ ::selection {
+     background: #b3d4fc;
+     text-shadow: none;
+}
+ .section-paddings {
+     padding: 100px 0;
+}
+
+ .travel-primary-btn {
+     background: #37b721;
+     display: inline-block;
+     padding: 12px 29px !important;
+     border-radius: 3px;
+     font-size: 15px;
+     color: #fff;
+     text-transform: uppercase;
+     font-family: "Poppins", sans-serif;
+     font-size: 15px;
+     text-decoration: none;
+}
+ .travel-booking-btn {
+     display: inline-block;
+     background: #37b721;
+     padding: 7px 15px;
+     color: #fefefe;
+     border-radius: 4px;
+     font-weight: 500;
+     text-transform: uppercase;
+     font-size: 12px;
+}
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 9999; }
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url("../images/preloader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px; }
+
+
+ header {
+     position: absolute;
+     z-index: 99;
+     width: 100%;
+     top: 0;
+     left: 0;
+}
+ .header-top-area {
+     background: rgba(34, 67, 74, 0.5);
+}
+ .header-top-area .header-top-left .header-top-contact li {
+     display: inline-block;
+     padding: 16px;
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 300;
+}
+ .header-top-area .header-top-left .header-top-contact li i {
+     margin-right: 10px;
+     color: #37b721;
+     font-size: 20px;
+}
+ .header-top-right .book-btn {
+     display: inline-block;
+     padding: 16px;
+     float: right;
+     background: #37b721;
+     transition: all ease-in-out 0.3s;
+}
+ .header-top-right .book-btn a {
+     color: #ffffff;
+     font-size: 15px;
+     text-transform: capitalize;
+     font-weight: 500;
+}
+ .header-top-right .book-btn:hover {
+     background: #f17b37;
+}
+ .header-bottom-area {
+     transition: all ease-in-out 0.5s;
+}
+ .header-bottom-area .logo-area {
+     padding: 25px 0;
+}
+ .header-bottom-area .main-menu > li {
+     display: inline-block;
+     padding: 50px 0 30px 42px;
+     position: relative;
+}
+ .header-bottom-area .main-menu > li > a {
+     display: block;
+     color: #ffffff;
+     font-size: 15px;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: 500;
+     position: relative;
+}
+ .header-bottom-area .main-menu > li > a:before {
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     background: #37b721;
+     content: '';
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     bottom: -70%;
+     text-align: center;
+     opacity: 0;
+     visibility: hidden;
+}
+ .header-bottom-area .main-menu > li ul.dropdown {
+     background: #ffffff repeat scroll 0 0;
+     left: 42px;
+     position: absolute;
+     top: 81% !important;
+     width: 200px;
+     z-index: 999;
+     opacity: 0;
+     visibility: hidden;
+     transition: all ease-in-out 0.2s;
+     transform-origin: 0 0 0;
+     position: absolute;
+     text-align: left;
+     transform: scaleY(0.4);
+}
+ .header-bottom-area .main-menu > li ul.dropdown li {
+     border-bottom: 1px solid #eef0f2;
+}
+ .header-bottom-area .main-menu > li ul.dropdown li:last-child {
+     border-bottom: 0;
+}
+ .header-bottom-area .main-menu > li ul.dropdown li a {
+     font-size: 13px !important;
+     text-transform: uppercase;
+     font-weight: 500;
+     display: block;
+     padding: 14px 18px;
+     color: #454545;
+     transition: all ease-in-out 0.3s;
+}
+ .header-bottom-area .main-menu > li ul.dropdown li a:hover {
+     color: #37b721;
+}
+ .header-bottom-area .main-menu > li:hover ul.dropdown {
+     opacity: 1;
+     visibility: visible;
+     top: 100%;
+     transform: scaleY(1);
+}
+ .header-bottom-area .main-menu > li:hover > a {
+     color: #37b721;
+}
+ .header-bottom-area .main-menu > li:hover a:before {
+     opacity: 1;
+     visibility: visible;
+}
+ .header-bottom-area .main-menu > li.active a {
+     color: #37b721;
+}
+ .header-bottom-area .main-menu > li.active a:before {
+     width: 100%;
+     opacity: 1;
+     visibility: visible;
+     bottom: -15px;
+}
+
+ .slider-area {
+     min-height: 1000px;
+}
+
+ .slider-area .slider-overlay {
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: 1;
+}
+ .slider-area .slider-overlay:before {
+     background: rgba(0, 0, 0, 0.2);
+     content: "";
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+     z-index: -1;
+}
+
+ .section-title, .section-title-white, .section-title-white-2 {
+     margin-bottom: 60px;
+     margin-top: 10px;
+}
+ .section-title h2, .section-title-white h2, .section-title-white-2 h2 {
+     background-color: transparent;
+     background-image: url("../images/line.png");
+     background-repeat: no-repeat;
+     color: #454545;
+     font-size: 30px;
+     font-weight: 500;
+     padding-bottom: 20px;
+     position: relative;
+     text-transform: uppercase;
+     background-position: center bottom;
+     z-index: 2;
+}
+ .section-title h2:before, .section-title h2:after, .section-title-white h2:before, .section-title-white h2:after, .section-title-white-2 h2:before, .section-title-white-2 h2:after {
+     background: #454545 none repeat scroll 0 0;
+     bottom: 3.8px;
+     content: "";
+     height: 1px;
+     left: -180px;
+     margin: 0 auto;
+     position: absolute;
+     right: 0;
+     text-align: center;
+     width: 120px;
+}
+ .section-title h2:after, .section-title-white h2:after, .section-title-white-2 h2:after {
+     left: 180px;
+}
+ .section-title p, .section-title-white p {
+     color: #727272;
+     margin: 0 auto;
+     max-width: 700px;
+     position: relative;
+     z-index: 2;
+     line-height: 25px;
+}
+ .section-title-white h2, .section-title-white-2 h2 {
+     color: #ffffff;
+}
+ .section-title-white h2:before, .section-title-white h2:after, .section-title-white-2 h2:before, .section-title-white-2 h2:after {
+     background: #ffffff none repeat scroll 0 0;
+}
+ .section-title-white p {
+     color: #ffffff;
+}
+ .section-title-white-2 h2 {
+     background-image: url("../images/line-read.png") !important;
+}
+
+ .popular-packages .single-package {
+     margin-bottom: 30px;
+     transition: all ease-in-out 0.5s;
+     overflow: hidden;
+     position: relative;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ .popular-packages .single-package img {
+     display: block;
+     width: 100%;
+}
+ .popular-packages .single-package .package-content {
+     padding: 20px;
+}
+ .popular-packages .single-package .package-content h3 {
+     font-weight: 600px;
+     color: #454545;
+     font-size: 20px;
+     transition: all ease-in-out 0.5s;
+}
+ .popular-packages .single-package .package-content p {
+     color: #727272;
+     font-size: 15px;
+     font-weight: 500;
+}
+ .popular-packages .single-package .package-content p span {
+     color: #37b721;
+     font-weight: 600;
+}
+ .popular-packages .single-package .package-calto-action {
+     padding: 0 20px 25px;
+}
+ .popular-packages .single-package .package-calto-action .ct-action li {
+     display: inline-block;
+}
+ .popular-packages .single-package .package-calto-action .ct-action li:first-child a {
+     transition: all ease-in-out 0.5s;
+     overflow: hidden;
+}
+ .popular-packages .single-package .package-calto-action .ct-action li:last-child {
+     float: right;
+     margin-top: 7px;
+}
+ .popular-packages .single-package .package-calto-action .ct-action li:last-child i {
+     font-size: 16px;
+     color: #ffef3b;
+}
+ .popular-packages .single-package:hover {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ .popular-packages .single-package:hover .ct-action a {
+     background: #f17b37;
+}
+ .popular-packages .single-package:hover .package-content h3 {
+     color: #37b721;
+}
+
+ .destination-slider-active .single-destination {
+     transition: all ease-in-out 0.5s;
+     margin-bottom: 30px;
+}
+ .destination-slider-active .single-destination figure {
+     position: relative;
+     overflow: hidden;
+}
+ .destination-slider-active .single-destination figure:before {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: '';
+     background: rgba(0, 0, 0, 0.3);
+     left: 0;
+     top: 0;
+     visibility: hidden;
+     transition: all ease-in-out 0.5s;
+     opacity: 0;
+     z-index: 0;
+}
+ .destination-slider-active .single-destination figure:after {
+     transform: skewX(45deg) translateX(-100%);
+}
+ .destination-slider-active .single-destination figure figcaption {
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     transition: all ease-in-out 0.5s;
+     opacity: 0;
+     z-index: 2;
+}
+ .destination-slider-active .single-destination figure figcaption a {
+     overflow: hidden;
+}
+ .destination-slider-active .single-destination .des-city {
+     padding: 20px;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+     transition: box-shadow 0.3s ease-in-out 0s;
+}
+ .destination-slider-active .single-destination .des-city a {
+     color: #454545;
+     font-weight: 500;
+     padding-bottom: 10px;
+     display: block;
+     transition: all ease-in-out 0.5s;
+     font-size: 18px;
+}
+ .destination-slider-active .single-destination .des-city a i {
+     margin-right: 10px;
+}
+ .destination-slider-active .single-destination .des-city h4 {
+     color: #727272;
+     font-weight: 500;
+     font-size: 14px;
+}
+ .destination-slider-active .single-destination .des-city h4 span {
+     float: right;
+}
+ .destination-slider-active .single-destination:hover .des-city {
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+ .destination-slider-active .single-destination:hover figcaption {
+     opacity: 1;
+     visivility: visible;
+}
+ .destination-slider-active .single-destination:hover figure:before {
+     opacity: 1;
+     visibility: visible;
+}
+ .destination-slider-active .single-destination:hover .des-city a {
+     color: #37b721;
+}
+
+ .trabble-bg {
+     background-color: palegreen;
+     position: relative;
+}
+ .trabble-bg:before {
+     position: absolute;
+     content: '';
+     width: 100%;
+     height: 100%;
+     left: 0;
+     top: 0;
+     background: rgba(0, 0, 0, 0.5);
+     z-index: 2;
+}
+ .single-travel {
+     background: #ffffff none repeat scroll 0 0;
+     padding: 20px;
+     margin-bottom: 40px;
+     border-radius: 3px;
+     position: relative;
+     z-index: 2;
+     transition: all ease-in-out 0.5s;
+     margin-bottom: 30px;
+}
+ .single-travel .travel-number {
+     float: left;
+     margin-right: 5px;
+     margin-top: -5px;
+}
+ .single-travel .travel-number span {
+     color: #37b721;
+     font-weight: 500;
+     font-size: 33px;
+}
+ .single-travel .travel-content h4 {
+     font-size: 20px;
+     color: #454545;
+     font-weight: 600;
+}
+ .single-travel .travel-content p {
+     margin: 0;
+     width: 90%;
+     line-height: 24px;
+}
+ .single-travel:hover {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+     cursor: pointer;
+}
+
+ .single-travel-blog {
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+     transition: box-shadow 0.3s ease-in-out;
+}
+ .single-travel-blog .blog-image {
+     overflow: hidden;
+     position: relative;
+     border-radius: 3px;
+}
+ .single-travel-blog .blog-image a {
+     display: block;
+}
+ .single-travel-blog .blog-image a img {
+     width: 100%;
+     transition: all ease-in-out 0.3s;
+}
+ .single-travel-blog .blog-content {
+     padding: 20px;
+}
+ .single-travel-blog .blog-content .blog-meta {
+     color: #727272;
+     font-size: 14px;
+     font-weight: 400;
+     overflow: hidden;
+     padding-bottom: 20px;
+}
+ .single-travel-blog .blog-content .blog-meta .post-date {
+     float: left;
+     margin-right: 5px;
+}
+ .single-travel-blog .blog-content .blog-meta .post-date span {
+     color: #727272;
+}
+ .single-travel-blog .blog-content .blog-meta .post-social {
+     text-align: right;
+}
+ .single-travel-blog .blog-content .blog-meta .post-social li {
+     display: inline-block;
+     margin: 0 10px;
+}
+ .single-travel-blog .blog-content .blog-meta .post-social li a {
+     display: block;
+     color: #727272;
+     font-size: 14px;
+     font-weight: 400;
+}
+ .single-travel-blog .blog-content .blog-meta .post-social li a i {
+     margin-right: 5px;
+}
+ .single-travel-blog .blog-content .blog-post-content h4 {
+     color: #454545;
+     font-size: 20px;
+     font-weight: 600;
+     text-transform: capitalize;
+     line-height: 30px;
+     transition: all ease-in-out 0.5s;
+}
+ .single-travel-blog .blog-content .blog-post-content p {
+     color: #727272;
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 25px;
+}
+ .single-travel-blog .blog-content .blog-post-content a {
+     color: #454545;
+     font-size: 12px;
+     font-weight: 500;
+     transition: all ease-in-out 0.5s;
+}
+ .single-travel-blog .blog-content .blog-post-content a i {
+     margin-left: 5px;
+}
+ .single-travel-blog:hover {
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+ .single-travel-blog:hover .blog-image img {
+     transform: scale(1.05);
+}
+ .single-travel-blog:hover .blog-post-content a {
+     color: #37b721;
+}
+
+ .incredible-places .single-place {
+     margin-bottom: 30px;
+}
+ .incredible-places .single-place figure {
+     overflow: hidden;
+     position: relative;
+}
+ .incredible-places .single-place figure:before {
+     position: absolute;
+     left: -30px;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     content: '';
+     transition: all ease-in-out 0.5s;
+     z-index: 1;
+     opacity: 0;
+     visibility: hidden;
+}
+ .incredible-places .single-place figure a {
+     display: block;
+}
+ .incredible-places .single-place figure a img {
+     width: 100%;
+}
+ .incredible-places .single-place figure figcaption {
+     position: absolute;
+     width: 100%;
+     left: 0px;
+     bottom: 30px;
+     transition: all ease-in-out 0.5s;
+     opacity: 0;
+     visibility: hidden;
+     z-index: 2;
+}
+ .incredible-places .single-place figure figcaption h4 {
+     color: #ffffff;
+     font-size: 15px;
+     font-weight: 500;
+}
+ .incredible-places .single-place figure figcaption h4 span {
+     color: #37b721;
+}
+ .incredible-places .single-place:hover figcaption {
+     left: 30px;
+     opacity: 1;
+     visibility: visible;
+}
+ .incredible-places .single-place:hover figure:before {
+     left: 0px;
+     opacity: 1;
+     visibility: visible;
+}
+
+ .subscribe-bg {
+     background-color: palegreen;
+     position: relative;
+}
+ .subscribe-bg:before {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: '';
+     left: 0;
+     top: 0;
+     background: rgba(0, 0, 0, 0.5);
+}
+ .subscribe-area {
+     padding: 150px 0px;
+}
+ .subscribe-area .subscribe-form .serach-form input {
+     background: #ffffff url("../images/icon/message.png") repeat scroll 0 0;
+     border: medium none;
+     border-radius: 4px;
+     color: #727272;
+     font-size: 14px;
+     height: 57px;
+     padding-left: 20px;
+     padding-right: 190px;
+     position: relative;
+     text-transform: capitalize;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-position: center right 147px;
+     padding-bottom: 0;
+}
+ .subscribe-area .subscribe-form .serach-form input:focus {
+     outline: none;
+}
+ .subscribe-area .subscribe-form .search-btn button {
+     border: medium none;
+     position: absolute;
+     right: 15px;
+     top: 0;
+     background: #f17b37;
+     font-size: 15px;
+     padding: 17.7px;
+     width: 20%;
+     border-radius: 0 4px 4px 0;
+     color: #ffffff;
+     text-transform: uppercase;
+     font-weight: 600;
+}
+
+ .footer-area {
+     background: #2f3133 url("../images/1.jpg") no-repeat scroll 99% center/cover;
+     padding-bottom: 10px;
+}
+ .footer-area .single-footer {
+     padding: 80px 0;
+}
+ .footer-area .single-footer .footer-title {
+     font-weight: 600;
+     font-size: 20px;
+     color: #ffffff;
+     padding: 20px 0;
+}
+ .footer-area .single-footer .footer-left .footer-logo p {
+     color: #ffffff;
+     font-size: 15px;
+     line-height: 25px;
+     padding-bottom: 15px;
+}
+ .footer-area .single-footer .footer-left .footer-contact li {
+     color: #ffffff;
+     display: block;
+     padding: 8px 0;
+}
+ .footer-area .single-footer .footer-left .footer-contact li img.map {
+     margin-right: 15px;
+     margin-top: -5px;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element {
+     position: relative;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li {
+     margin-bottom: 25px;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input {
+     background: #444648 none repeat scroll 0 0;
+     border: medium none;
+     height: 40px;
+     width: 100%;
+     border-radius: 3px;
+     padding: 0 10px;
+     color: #c3c3c3;
+     transition: all ease-in-out 0.3s;
+     font-size: 13px;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input:focus {
+     outline: none;
+     border: 1px solid transparent;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input ::-webkit-input-placeholder {
+
+     color: #c3c3c3;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input ::-moz-placeholder {
+
+     color: #c3c3c3;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input :-ms-input-placeholder {
+
+     color: #c3c3c3;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input :-moz-placeholder {
+
+     color: #c3c3c3;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li input:hover {
+     background: #7a7c7d;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea {
+     background: #444648 none repeat scroll 0 0;
+     border: medium none;
+     height: 120px;
+     width: 100%;
+     border-radius: 3px;
+     color: #ffffff;
+     padding-left: 10px;
+     padding-top: 8px;
+     transition: all ease-in-out 0.3s;
+     font-size: 13px;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea:focus {
+     outline: none;
+     border: 1px solid transparent;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea ::-webkit-input-placeholder {
+
+     color: #ffffff;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea ::-moz-placeholder {
+
+     color: #ffffff;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea :-ms-input-placeholder {
+
+     color: #ffffff;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea :-moz-placeholder {
+
+     color: #ffffff;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element li textarea:hover {
+     background: #7a7c7d;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element button {
+     background: #37b721 none repeat scroll 0 0;
+     border: medium none;
+     bottom: 2px;
+     color: #ffffff;
+     display: block;
+     font-size: 15px;
+     font-weight: 500;
+     padding: 8px 11px;
+     right: 0px;
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out 0s;
+     position: absolute;
+}
+ .footer-area .single-footer .footer-contact-form form .footer-form-element button:hover {
+     background: #f17b37;
+}
+ .footer-area .single-footer .footer-social-media .social-footer-title {
+     font-weight: 600;
+     font-size: 20px;
+     color: #ffffff;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li {
+     display: inline-block;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li:nth-child(1):hover a {
+     color: #3b5998 !important;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li:nth-child(2):hover a {
+     color: #0084b4 !important;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li:nth-child(3):hover a {
+     color: #0077B5 !important;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li:nth-child(4):hover a {
+     color: #d34836 !important;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li:nth-child(5):hover a {
+     color: #bb0000 !important;
+}
+ .footer-area .single-footer .footer-social-media .footer-social-link li a {
+     display: block;
+     padding-left: 0;
+     padding-right: 20px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     font-size: 15px;
+     font-weight: 400;
+     color: #ffffff;
+     transition: all ease-in-out 0.3s;
+}
+ .footer-area .footer-bottom {
+     position: relative;
+}
+ .footer-area .footer-bottom:before {
+     background: #717273 none repeat scroll 0 0;
+     bottom: 0;
+     content: "";
+     height: 1px;
+     left: 14px;
+     position: absolute;
+     top: -36px;
+     width: 100%;
+     z-index: 8;
+}
+ .footer-area .footer-bottom .payicon li {
+     float: left;
+     margin-right: 5px;
+     margin-top: -5px;
+     color: #fff;
+}
+
+ .pos-rtive {
+     position: relative;
+}
+ .to-top {
+     display: none;
+}
+ .to-top a {
+     background: #f17b37 none repeat scroll 0 0;
+     border-radius: 4px;
+     color: #ffffff;
+     font-size: 35px;
+     height: 40px;
+     line-height: 40px;
+     position: fixed;
+     right: 1%;
+     text-align: center;
+     top: 91%;
+     transition: all 0.5s ease-in-out 0s;
+     width: 40px;
+     z-index: 999;
+}
+ .to-top:hover {
+     background: #ffff00 none repeat scroll 0 0;
+     color: #283754;
+}
+.header-bottom-area .main-menu > li > a {
+     font-weight: 400;
+}
+.header-bottom-area .logo-area {
+    padding: 24px 0;
+}
+.subscribe-area .subscribe-form .serach-form input {
+    height: 56px;
+}
+.header-top-area .header-top-left .header-top-contact li i{
+	font-size: 18px;
+}
+.header-top-right .book-btn {
+    padding: 0px;
+}
+.header-top-area .header-top-left .header-top-contact li {
+    padding: 12px;
+}
+.header-top-right .book-btn a {
+    padding: 12px 16px;
+    display: block;
+}
+.section-title h2, .section-title-white h2, .section-title-white-2 h2 {
+    font-size: 37px;
+    text-transform: capitalize;
+}
+.single-travel-blog .blog-content .blog-post-content a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+.header-bottom-area .main-menu > li ul.dropdown {
+     top: 78% !important;
+     border-top: 2px solid #37b721;
+}
+.header-bottom-area .main-menu > li ul.dropdown li a:hover {
+     color: #37b721;
+     margin-left: 5px;
+}
+
+
+ .popular-packages .single-package .package-image{
+     overflow: hidden;     
+ }
+.popular-packages .single-package .package-image img {
+     transform: scale(1.1);
+     transition:  all 0.3s ease-in-out;
+}
+.popular-packages .single-package:hover .package-image a img{
+     transform: scale(1);
+}
+
+
+.single-travel-blog .blog-image {
+     overflow: hidden;
+     position: relative;
+     border-radius: 3px;
+}
+ .single-travel-blog .blog-image a {
+     display: block;
+}
+.single-travel-blog .blog-image a img {
+     width: 100%;
+     transition: all ease-in-out 0.3s;
+     transform: scale(1.1);
+}
+ .single-travel-blog:hover .blog-image img {
+     transform: scale(1);
+}
